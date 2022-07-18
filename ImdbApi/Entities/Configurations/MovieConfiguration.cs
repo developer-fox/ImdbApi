@@ -9,6 +9,8 @@ namespace ImdbApi.Entities.Configurations
         {
             builder.ToTable("Movie");
 
+            builder.Property(e=>e.ImageUrl).IsRequired();
+
             builder.Property(e => e.Name).IsRequired().HasMaxLength(50);
 
             builder.Property(e => e.Description).IsRequired().HasMaxLength(1000);
