@@ -28,6 +28,10 @@ namespace ImdbApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Certificate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -35,6 +39,10 @@ namespace ImdbApi.Migrations
                         .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Like")
                         .HasColumnType("int");
@@ -62,9 +70,11 @@ namespace ImdbApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("0c7fbf6b-d609-48f7-9fc4-9a0b6d16264a"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4020),
+                            Id = new Guid("f8607203-6b8f-4ff5-b94c-7d4dba390c40"),
+                            Certificate = "13+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6657),
                             Description = "Movie 1 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 3,
                             Name = "Movie 1",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -73,9 +83,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("40d945d8-fe91-4d34-afe6-54310a9955e7"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4034),
+                            Id = new Guid("a737ccf6-860f-4981-91e0-8e93e9d8af17"),
+                            Certificate = "12+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6671),
                             Description = "Movie 1 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 15,
                             Name = "Movie 1",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -84,9 +96,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3158b220-40fc-4a88-8218-a081e06101b4"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4037),
+                            Id = new Guid("81d3a760-38de-46f5-aa55-5d2b829e86e2"),
+                            Certificate = "13+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6674),
                             Description = "Movie 2 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 20,
                             Name = "Movie 2",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -95,9 +109,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1f19365b-0ff9-4c73-9c4e-0b9d5db6a8b3"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4040),
+                            Id = new Guid("848d967a-3c9e-45af-a7ad-8cefc2ee6d82"),
+                            Certificate = "13+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6676),
                             Description = "Movie 3 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 30,
                             Name = "Movie 3",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -106,9 +122,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("bac65cb8-5dae-4a80-b421-3796698b36f7"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4043),
+                            Id = new Guid("85bc62a5-2346-4722-9f31-6c17e0f962a8"),
+                            Certificate = "18+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6678),
                             Description = "Movie 4 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 40,
                             Name = "Movie 4",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -117,9 +135,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("54e6d1b5-6d14-4aa1-817e-9a6e9b3fdc77"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4053),
+                            Id = new Guid("50e53d1a-a136-4722-970b-0ff13f764605"),
+                            Certificate = "7+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6680),
                             Description = "Movie 5 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 60,
                             Name = "Movie 5",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -128,9 +148,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("45fa30c5-1df4-4755-9e17-b622c1bb5aea"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4056),
+                            Id = new Guid("5abb4135-9fd3-4d73-9ca3-0dc5911ca299"),
+                            Certificate = "7+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6682),
                             Description = "Movie 6 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 150,
                             Name = "Movie 4",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -139,9 +161,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4dc4ba44-715b-4e37-ad33-2ddfbd314891"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4059),
+                            Id = new Guid("e9d4e692-7555-4ef6-bed7-b81174c40a0b"),
+                            Certificate = "18+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6697),
                             Description = "Movie 6 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 160,
                             Name = "Movie 3",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -150,9 +174,11 @@ namespace ImdbApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0ad87b1d-6ec2-4848-b33d-ac95e014695c"),
-                            CreatedDate = new DateTime(2022, 7, 16, 0, 23, 35, 320, DateTimeKind.Local).AddTicks(4061),
+                            Id = new Guid("f5902d5e-0840-4db8-bf70-aa617532e774"),
+                            Certificate = "13+",
+                            CreatedDate = new DateTime(2022, 7, 18, 12, 59, 43, 32, DateTimeKind.Local).AddTicks(6699),
                             Description = "Movie 6 Descriptions",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_FMjpg_UX1000_.jpg",
                             Like = 100,
                             Name = "Movie 2",
                             ReleaseDate = new DateTime(2019, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
