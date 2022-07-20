@@ -1,11 +1,7 @@
-﻿namespace ImdbApi.Entities
+﻿namespace ImdbApi.Models
 {
-    public class Movie
+    public class MovieListDto
     {
-        public Movie()
-        {
-            Status = true; 
-        }
         public Guid Id { get; set; }
         public string ImageUrl { get; set; }
         public string Name { get; set; }
@@ -16,10 +12,5 @@
         public int Like { get; set; }
         public DateTime CreatedDate { get; set; }
         public bool Status { get; set; }
-
-        public ICollection<Category> Categories { get; set; }
-
-        public Guid GenreId { get; set; }
-        public Genre Genre { get; set; }
     }
 }
